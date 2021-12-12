@@ -6,7 +6,7 @@ namespace PrimeNumbers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Inpunt number: ");
+            Console.WriteLine("Enter a natural number: ");
             var number = Input.VerifyValue();
 
 
