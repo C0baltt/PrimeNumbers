@@ -7,7 +7,10 @@ namespace PrimeNumbers
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a natural number: ");
-            var number = Input.VerifyValue();
+            var startNumber = Input.VerifyValue();
+            var endNumber = Input.VerifyValue();
+
+            CalculatorPrimreNumbers.CalculateFirstNextOddNumbers(startNumber);
 
 
         }

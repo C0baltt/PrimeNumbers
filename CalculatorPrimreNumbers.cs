@@ -2,7 +2,7 @@
 
 namespace PrimeNumbers
 {
-    class CalculatorPrimreNumbers
+    public class CalculatorPrimreNumbers
     {
         static List<ulong> primeNumbers = new(1);
 
@@ -22,7 +22,7 @@ namespace PrimeNumbers
             return startNumber += CalculateFirstNextOddNumbers(firstDigitOfNumber);
         }
 
-        ulong CalculateFirstNextOddNumbers(ulong nextOddNumber)
+        public ulong CalculateFirstNextOddNumbers(ulong nextOddNumber)
         {
             switch (nextOddNumber)
             {
@@ -61,9 +61,44 @@ namespace PrimeNumbers
             return nextOddNumber;
         }
 
+        void CalculatePrimeNumbers(ulong start, ulong end)
+        {
+            
+
+
+            CalculateCounter();
+
+
+
+
+        }
+
         void CalculatePrimeNumber()
         {
+            //for (int i = 0; i < primeNumbers.Count; i++)
+            //{
 
+            //}
+
+            //while (number < (ulong)primeNumbers.Count)
+
+            var number = primeNumbers[0];
+            while (true)
+            {
+                //(number *= number) < (ulong)primeNumbers.Count
+
+                var _item = number;
+
+                if ((_item *= _item) < primeNumbers[primeNumbers.Count - 1] )
+                {
+                    List<ulong> _primeNumbers = primeNumbers.GetRange(0, primeNumbers.FindIndex(i));
+
+                    foreach (var _number in primeNumbers)
+                    {
+
+                    }
+                } 
+            }
         }
 
         int CalculateCounter()
